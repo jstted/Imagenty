@@ -24,11 +24,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let tabBarController = UITabBarController()
         tabBarController.setViewControllers(tabBarItems, animated: true)
+        tabBarController.navigationController?.popToRootViewController(animated: false)
         
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
         
     }
+    
+    //MARK: - ViewControllers methods
+    
+    
 
 }
 

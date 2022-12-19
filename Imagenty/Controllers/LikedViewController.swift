@@ -13,18 +13,20 @@ class LikedViewController: UIViewController {
         
         super.viewDidLoad()
         view.backgroundColor = .white
+        title = "Collection"
+        
+        let homeImage = UIImage(systemName: "house", withConfiguration: nil)
+        let filledHomeImage = UIImage(systemName: "house.fill", withConfiguration: nil)
+        let heartImage = UIImage(systemName: "heart", withConfiguration: nil)
+        let filledHeartImage = UIImage(systemName: "heart.fill", withConfiguration: nil)
+        
+        var tabBarItem = UITabBarItem()
+        tabBarItem = UITabBarItem(title: "Collection", image: heartImage, tag: 1)
+        tabBarItem.selectedImage = filledHeartImage
+        self.tabBarItem = tabBarItem
         
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
